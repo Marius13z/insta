@@ -62,7 +62,7 @@ const Navbar = () => {
         {session ? (
             <div className="flex items-center justify-end space-x-4">
             <HomeIcon onClick={() => router.push("/")} className="navBtn"/>
-            <MenuIcon className="h-6 md:hidden cursor-pointer"/>
+        
     
             <div className="relative navBtn">
             <PaperAirplaneIcon className="navBtn rotate-45"/>
@@ -70,7 +70,7 @@ const Navbar = () => {
             bg-red-500 rounded-full flex items-center justify-center animate-pulse text-white">3</div>
             </div>
     
-            <PlusCircleIcon onClick={() => setOpen(true)} className="navBtn hover:rotate-90"/>
+             <PlusCircleIcon onClick={() => setOpen(true)} className="h-7 cursor-pointer hover:scale-110 transition-all duration-150 ease-in"/>
             <UserGroupIcon className="navBtn"/>
             <HeartIcon className="navBtn"/>
             <img referrerpolicy="no-referrer" src={session?.user?.image} className="md:hidden h-10 rounded-full cursor-pointer"/>
